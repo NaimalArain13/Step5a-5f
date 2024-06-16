@@ -1,0 +1,93 @@
+1. Object
+   1
+Create an object car with properties make (string) and year (number). Print both properties using dot notation and bracket notation.
+   2
+Define a type for an object employee with properties name (string) and age (number). Create an instance of this object and print its properties.
+   3
+Create an object teacher with properties subject (string) and yearsTeaching (number). Print both properties using dot notation and bracket notation.
+   4
+Define a type for an object course with properties title (string) and duration (number). Create an instance of this object and print its properties.
+   5
+Create an object car with properties brand (string) and model (string). Add a method getCarInfo to the object that returns a string combining the brand and model. Call the method and print the result.
+   6
+Define an object user with properties username (string) and email (string). Update the email property and print the updated object.
+   7
+Create an object book with properties title (string), author (string), and yearPublished (number). Print the author property using both dot notation and bracket notation.
+
+
+2. Object Aliased
+   1
+Define an aliased type Person with properties firstName (string) and lastName (string). Create an instance of Person and print its properties.
+   2
+Define an interface Product with properties name (string) and price (number). Create an instance of Product and print its properties.
+   3
+Define an aliased type Device with properties brand (string) and model (string). Create an instance of Device and print its properties.
+   4
+Define an interface Employee with properties id (number) and department (string). Create an instance of Employee and print its properties.
+   5
+Create an aliased type Address with properties street (string) and city (string). Create an instance of Address and print its properties.
+   6
+Define an interface Course with properties name (string) and duration (number). Create an instance of Course and print its properties.
+   7
+Create an aliased type Book with properties title (string) and author (string). Create an instance of Book and print its properties.
+
+
+3. Structural Typing in Object Literals
+   1
+Create two interfaces Rectangle and Square both having a property width (number). Show that a Rectangle can be assigned to a Square.
+   2
+Define an interface Circle with properties radius (number) and color (string). Show that a Circle cannot be assigned to a Square.
+   3
+Create two interfaces Rectangle and Square both having a property sideLength (number). Show that a Rectangle can be assigned to a Square.
+    4
+Define an interface Triangle with properties base (number) and height (number). Show that a Triangle cannot be assigned to a Square.
+    5
+Create an interface Circle with properties radius (number) and color (string). Show that a Circle can be assigned to another object with the same structure.
+    6
+Define an interface Cube with properties sideLength (number) and volume (number). Show that a Cube cannot be assigned to a Square.
+     7
+Create an interface Book with properties title (string) and author (string). Show that an object with the same structure but additional properties can be assigned to a Book.
+
+
+4. Nested Object Type
+    1
+Define a type Library with a nested object type Book which has properties title (string) and author (object with properties firstName and lastName, both strings). Create an instance of Library and print the book's author name.
+    2
+Define a type Publisher with properties name (string) and location (string). Create a nested object type Magazine with properties title (string) and publisher (Publisher). Create an instance of Magazine and print the publisher's name.
+    3
+Create a nested object type Album with properties title (string) and artist (object with properties name (string) and age (number)). Create an instance of Album and print the artist's name.
+    4
+Define a type Company with a nested object type CEO having properties firstName (string) and lastName (string). Create an instance of Company and print the CEO's full name.
+    5
+Create a nested object type School with properties name (string) and principal (object with properties firstName (string) and lastName (string)). Create an instance of School and print the principal's full name.
+    6
+Define a type Team with a nested object type Coach having properties firstName (string) and lastName (string). Create an instance of Team and print the coach's full name.
+
+5. Intersection Types
+   1
+Define two interfaces Customer with properties customerId (number) and name (string), and Member with properties membershipId (number) and name (string). Create an intersection type PremiumCustomer and print its properties.
+   2
+Define two interfaces Developer with properties developerId (number) and skills (string[]), and Manager with properties managerId (number) and teamSize (number). Create an intersection type Lead and instantiate it. Print the properties of the Lead.
+   3
+Create two interfaces Person with properties name (string) and age (number), and Employee with properties employeeId (number) and department (string). Define an intersection type Worker and instantiate it. Print the properties of the Worker.
+    4
+Define interfaces Student with properties studentId (number) and courses (string[]), and Athlete with properties sport (string) and team (string). Create an intersection type StudentAthlete and instantiate it. Print the properties of the StudentAthlete.
+    5
+Create two interfaces Vehicle with properties make (string) and model (string), and Electric with properties batteryLife (number) and range (number). Define an intersection type ElectricVehicle and instantiate it. Print the properties of the ElectricVehicle.
+   6
+Define interfaces Gamer with properties username (string) and games (string[]), and Streamer with properties channel (string) and followers (number). Create an intersection type GamerStreamer and instantiate it. Print the properties of the GamerStreamer.
+
+6. Unknown, Never, Any
+Assign different types of values to a variable of type any and print them.
+   1
+Assign different types of values to a variable of type unknown and attempt to assign it to other variable types to see the TypeScript errors.
+    2
+Create a function that throws an error and has a return type of never.
+    3
+Assign different types of values to a variable of type unknown and print each value. Then attempt to directly assign the unknown variable to variables of other specific types and observe the TypeScript errors.
+    4
+Create a variable of type unknown and a function printUnknown that accepts an unknown type parameter. Inside the function, use type assertion to print the value if it's a string.
+Assign an array, an object, and a function to a variable of type unknown. Use type assertion to safely access and print properties or call the function.
+     5
+Define a function isNumber that takes an unknown parameter and returns a boolean indicating whether the parameter is a number.
+Create a variable of type unknown and use a type guard to safely perform operations if the variable is a number or a string.
