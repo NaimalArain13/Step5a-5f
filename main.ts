@@ -228,17 +228,17 @@ function printUnknown(a: unknown) {
 // Define a function isNumber that takes an unknown parameter and returns a boolean indicating whether the parameter is a number.
 // Create a variable of type unknown and use a type guard to safely perform operations if the variable is a number or a string.
 
-function isNumber(a: unknown) {
+function isNumber(a: unknown):a is number {
   return typeof a === "number";
 }
 
-let variable: unknown;
-variable = 2;
+console.log(isNumber("2"))
+let variable:unknown;
+variable = "2";
 if (isNumber(variable)) {
-  console.log(`${variable} is a number and it's sqaure is ${variable ** variable}`);
+  console.log(`${variable} is a number and it's sqaure is ${variable * 2}`);
 } else if (typeof variable === "string") {
   console.log(`${variable} is a string and it's length is ${variable.length}`);
 } else {
   console.log("variable is unknown");
 }
-

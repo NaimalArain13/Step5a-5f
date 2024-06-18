@@ -24,11 +24,11 @@ let sec = {
 };
 let book1 = {
     title: "English",
-    author: "elsa kazi"
+    author: "elsa kazi",
 };
 let book2 = {
     title: "maths",
-    author: "WWW"
+    author: "WWW",
 };
 book1 = book2;
 book2 = book1;
@@ -37,40 +37,40 @@ let lib = {
         title: "Hamari pirem kahani",
         author: {
             firstName: "LAL",
-            lastName: "BABA"
-        }
-    }
+            lastName: "BABA",
+        },
+    },
 };
 let mag = {
     title: "halwa puri",
     publisher: {
         name: "kallo puri wala",
-        location: "gandy naly pr"
-    }
+        location: "gandy naly pr",
+    },
 };
 let alb = {
     title: "Wedding",
     artist: {
         name: "Asra",
-        age: 23
-    }
+        age: 23,
+    },
 };
 let comp = {
     ceo: {
         firstName: "Naimal",
-        lastName: "Salahuddin"
-    }
+        lastName: "Salahuddin",
+    },
 };
 let team = {
     ins: {
         firstName: "Umar",
-        lastName: "Gul"
-    }
+        lastName: "Gul",
+    },
 };
 let premium = {
     name: "Naimal",
     customerId: 12,
-    membershipId: 23
+    membershipId: 23,
 };
 // console.log(premium);
 // 2
@@ -107,5 +107,27 @@ function printUnknown(a) {
 function isNumber(a) {
     return typeof a === "number";
 }
-let variable = 23;
-isNumber(variable);
+console.log(isNumber("2"));
+let variable;
+variable = "2";
+if (isNumber(variable)) {
+    console.log(`${variable} is a number and it's sqaure is ${variable * 2}`);
+}
+else if (typeof variable === "string") {
+    console.log(`${variable} is a string and it's length is ${variable.length}`);
+}
+else {
+    console.log("variable is unknown");
+}
+// function isNumber(a: unknown): a is number {
+//   return typeof a === "number";
+// }
+// let variable: unknown;
+// variable = "2";
+// if (isNumber(variable)) {
+//   console.log(`${variable} is a number and its square is ${variable ** 2}`);
+// } else if (typeof variable === "string") {
+//   console.log(`${variable} is a string and its length is ${variable.length}`);
+// } else {
+//   console.log("variable is unknown");
+// }
